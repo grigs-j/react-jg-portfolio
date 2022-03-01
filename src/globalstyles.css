@@ -1,0 +1,26 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+body {
+    background: radial-gradient(#d7d7ff, #23294b);
+    font-size: 1rem;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0;
+}
+
+.MuiDrawer-paper {
+    width: 100% !important;
+    justify-content: center;
+    align-items: center;
+}
+.MuiGrid-container {
+    flex-wrap: nowrap;
+}
