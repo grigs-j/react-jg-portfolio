@@ -13,12 +13,11 @@ export default makeStyles((theme) => ({
         },
     },
     container: {
-        margin: "6rem 0",
+        margin: "8rem 0",
     },
     title: {
         color: "#0c1027",
         fontWeight: "700",
         marginBottom: "2rem",
-        width: "80%",
     },
 }));

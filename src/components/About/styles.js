@@ -11,6 +11,6 @@ export default makeStyles(() => ({
         marginBottom: "1rem",
     },
     container: {
-        margin: "6rem 0",
+        margin: "8rem 0",
     },
 }));

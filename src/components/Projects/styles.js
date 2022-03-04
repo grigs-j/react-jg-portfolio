@@ -20,4 +20,53 @@ export default makeStyles((theme) => ({
     container: {
         margin: "6rem 0",
     },
+    previews: {
+        display: "block",
+        width: "100%",
+        objectFit: "cover",
+        height: "500px",
+    },
+    projTitle: {
+        fontWeight: "700",
+        color: "#a8aaff",
+        justifyContent: "center",
+    },
+    list: {
+        justifyContent: "center",
+        paddingTop: "0",
+    },
+    projectListContainer: {
+        flexDirection: "column",
+        alignItems: "flex-start",
+    },
+    projText: {
+        marginBottom: "2rem",
+    },
+    card: {
+        padding: ".25rem",
+        background: "rgba(200,200,200,.5)",
+    },
+    btnLink: {
+        display: "flex",
+        justifyContent: "center",
+        fontSize: "1.75rem",
+        color: "#0c1027",
+        margin: "0rem 1rem",
+        "&:hover": {
+            color: "#a8aaff",
+        },
+    },
+    topLink: {
+        cursor: "pointer",
+        fontSize: "1.25rem",
+        color: "#a8aaff",
+        margin: "2rem auto",
+        width: "125px",
+    },
+    btnLinkContainer: {
+        justifyContent: "center",
+    },
+    subtitle: {
+        justifyContent: "center",
+    },
 }));

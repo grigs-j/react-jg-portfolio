@@ -6,20 +6,23 @@ import { Link } from "react-router-dom";
 const Contact = () => {
     const classes = useStyles();
     return (
-        <Grid container className={classes.container}>
-            <Grid item>
-                <Typography variant="h2" className={classes.title}>
-                    interested in working together?
-                </Typography>
-                <Link
-                    to="//mailto:grigsbyjonathan@gmail.com"
-                    target="_blank"
-                    className={classes.link}
-                >
-                    email me
-                </Link>
+        <>
+            <div id="contact"></div>
+            <Grid container className={classes.container}>
+                <Grid item>
+                    <Typography variant="h1" className={classes.title}>
+                        interested in working together?
+                    </Typography>
+                    <Link
+                        to="//mailto:grigsbyjonathan@gmail.com"
+                        target="_blank"
+                        className={classes.link}
+                    >
+                        email me
+                    </Link>
+                </Grid>
             </Grid>
-        </Grid>
+        </>
     );
 };
 

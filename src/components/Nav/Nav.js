@@ -6,7 +6,7 @@ import {
     Hidden,
     SwipeableDrawer,
 } from "@material-ui/core";
-import { MenuRounded } from "@material-ui/icons";
+import { MenuRounded, Ado } from "@material-ui/icons";
 import React, { useState } from "react";
 import useStyles from "./styles";
 import {
@@ -58,9 +58,9 @@ const Nav = () => {
                             </a>
                         </ListItem>
                         <ListItem>
-                            <Link to="/contact" className={classes.navLink}>
+                            <a href="/#contact" className={classes.navLink}>
                                 CONTACT
-                            </Link>
+                            </a>
                         </ListItem>
                     </List>
                 </Hidden>
@@ -77,7 +77,7 @@ const Nav = () => {
                     <FaNodeJs className={classes.skill} />
                 </Grid>
                 <Typography variant="h6">
-                    front-end react web developer
+                    front end react js web developer
                 </Typography>
                 <Typography variant="h6">
                     creative design with a caffeinated heart
@@ -129,12 +129,14 @@ const Nav = () => {
                             className={classes.navLink}
                             target="_blank"
                             rel="noreferrer"
-                        ></a>
+                        >
+                            RESUME
+                        </a>
                     </ListItem>
                     <ListItem className={classes.navMobileList}>
-                        <Link to="/contact" className={classes.navLink}>
+                        <a href="/#contact" className={classes.navLink}>
                             CONTACT
-                        </Link>
+                        </a>
                     </ListItem>
                 </List>
             </SwipeableDrawer>
