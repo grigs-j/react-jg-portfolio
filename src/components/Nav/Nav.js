@@ -6,7 +6,7 @@ import {
     Hidden,
     SwipeableDrawer,
 } from "@material-ui/core";
-import { MenuRounded, Ado } from "@material-ui/icons";
+import { MenuRounded } from "@material-ui/icons";
 import React, { useState } from "react";
 import useStyles from "./styles";
 import {
@@ -76,7 +76,7 @@ const Nav = () => {
                     <FaReact className={classes.skill} />
                     <FaNodeJs className={classes.skill} />
                 </Grid>
-                <Typography variant="h6">
+                <Typography variant="h5" gutterBottom>
                     front end react js web developer
                 </Typography>
                 <Typography variant="h6">
@@ -114,12 +114,20 @@ const Nav = () => {
                 />
                 <List>
                     <ListItem className={classes.navMobileList}>
-                        <Link to="/" className={classes.navLink}>
+                        <Link
+                            to="/"
+                            className={classes.navLink}
+                            onClick={() => setOpen(false)}
+                        >
                             HOME
                         </Link>
                     </ListItem>
                     <ListItem className={classes.navMobileList}>
-                        <a href="/#projects" className={classes.navLink}>
+                        <a
+                            href="/#projects"
+                            className={classes.navLink}
+                            onClick={() => setOpen(false)}
+                        >
                             PROJECTS
                         </a>
                     </ListItem>
@@ -129,12 +137,17 @@ const Nav = () => {
                             className={classes.navLink}
                             target="_blank"
                             rel="noreferrer"
+                            onClick={() => setOpen(false)}
                         >
                             RESUME
                         </a>
                     </ListItem>
                     <ListItem className={classes.navMobileList}>
-                        <a href="/#contact" className={classes.navLink}>
+                        <a
+                            href="/#contact"
+                            className={classes.navLink}
+                            onClick={() => setOpen(false)}
+                        >
                             CONTACT
                         </a>
                     </ListItem>

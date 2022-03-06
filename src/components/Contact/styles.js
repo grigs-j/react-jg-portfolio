@@ -16,7 +16,7 @@ export default makeStyles((theme) => ({
         margin: "8rem 0",
     },
     title: {
-        color: "#0c1027",
+        color: "#a8aaff",
         fontWeight: "700",
         marginBottom: "2rem",
     },

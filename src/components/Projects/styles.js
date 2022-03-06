@@ -2,7 +2,7 @@ import { makeStyles } from "@material-ui/core";
 
 export default makeStyles((theme) => ({
     title: {
-        color: "#0c1027",
+        color: "#a8aaff",
         fontWeight: "700",
     },
     link: {
@@ -11,6 +11,9 @@ export default makeStyles((theme) => ({
         color: "#0c1027",
         cursor: "pointer",
         "&:hover": {
+            color: "#a8aaff",
+        },
+        "&:focus": {
             color: "#a8aaff",
         },
         [theme.breakpoints.up("lg")]: {
@@ -44,7 +47,7 @@ export default makeStyles((theme) => ({
     },
     card: {
         padding: ".25rem",
-        background: "rgba(200,200,200,.5)",
+        background: "rgba(168, 169, 255,0.15)",
     },
     btnLink: {
         display: "flex",
@@ -68,5 +71,6 @@ export default makeStyles((theme) => ({
     },
     subtitle: {
         justifyContent: "center",
+        color: "#a8aaff",
     },
 }));

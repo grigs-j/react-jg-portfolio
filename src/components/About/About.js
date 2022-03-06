@@ -16,8 +16,8 @@ const About = () => {
                     visually pleasing experiences. i am passionate about
                     javascript logic and creativity coming together.
                 </Typography>
-                <Typography variant="h6">
-                    currently looking to be hired!
+                <Typography variant="h6" className={classes.subtext}>
+                    i'm currently looking for hiring opportunities!
                 </Typography>
             </Grid>
         </Grid>

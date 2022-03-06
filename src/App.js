@@ -21,25 +21,26 @@ function App() {
         <Router>
             <ThemeProvider theme={theme}>
                 <CssBaseline />
-                <Container maxWidth="md">
-                    <Routes>
-                        <Route
-                            exact
-                            path="/"
-                            element={
-                                <>
-                                    <Container maxWidth="md">
-                                        <Nav />
-                                        <Projects />
-                                        <About />
-                                        <Contact />
-                                        <Footer />
-                                    </Container>
-                                </>
-                            }
-                        />
-                    </Routes>
-                </Container>
+                <Routes>
+                    <Route
+                        exact
+                        path="/"
+                        element={
+                            <>
+                                <Container
+                                    maxWidth="md"
+                                    className="mainContainer"
+                                >
+                                    <Nav />
+                                    <Projects />
+                                    <About />
+                                    <Contact />
+                                    <Footer />
+                                </Container>
+                            </>
+                        }
+                    />
+                </Routes>
             </ThemeProvider>
         </Router>
     );

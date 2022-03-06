@@ -2,7 +2,7 @@ import { makeStyles } from "@material-ui/core";
 
 export default makeStyles(() => ({
     title: {
-        color: "#0c1027",
+        color: "#a8aaff",
         fontWeight: "700",
     },
     text: {
@@ -12,5 +12,8 @@ export default makeStyles(() => ({
     },
     container: {
         margin: "8rem 0",
+    },
+    subtext: {
+        fontWeight: "700",
     },
 }));

@@ -11,13 +11,15 @@ import { ExpandLess, ExpandMore } from "@material-ui/icons";
 import React, { useState } from "react";
 import useStyles from "./styles";
 import { Link } from "react-router-dom";
+import { FaArrowUp } from "react-icons/fa";
+
+//IMAGES IMPORTS
 import LetsReadPreview from "../../assets/letreadpreview.PNG";
 import reactMoviePreview from "../../assets/rmdb-mobile-preview.PNG";
 import MGPreview from "../../assets/mg-mobile-preview.PNG";
 import waresPreview from "../../assets/gatheredwares-mobile-preview.PNG";
 import JGPreview from "../../assets/jg-portfolio-mobile-preview.PNG";
 import jsGamePreview from "../../assets/2048-preview.PNG";
-import { FaArrowUp } from "react-icons/fa";
 
 const Projects = () => {
     const classes = useStyles();
@@ -92,6 +94,7 @@ const Projects = () => {
                                                 <Typography
                                                     variant="h5"
                                                     gutterBottom
+                                                    align="center"
                                                 >
                                                     An e-commerce kid's
                                                     bookstore
@@ -255,6 +258,7 @@ const Projects = () => {
                                                 <Typography
                                                     variant="h5"
                                                     gutterBottom
+                                                    align="center"
                                                 >
                                                     A movie search database app
                                                 </Typography>
@@ -405,6 +409,7 @@ const Projects = () => {
                                                 <Typography
                                                     variant="h5"
                                                     gutterBottom
+                                                    align="center"
                                                 >
                                                     An author's website
                                                     promoting new book(under
@@ -541,6 +546,7 @@ const Projects = () => {
                                                 <Typography
                                                     variant="h5"
                                                     gutterBottom
+                                                    align="center"
                                                 >
                                                     A local vendor's CMS site
                                                 </Typography>
@@ -661,6 +667,7 @@ const Projects = () => {
                                                 <Typography
                                                     variant="h5"
                                                     gutterBottom
+                                                    align="center"
                                                 >
                                                     This very site!
                                                 </Typography>
@@ -815,6 +822,7 @@ const Projects = () => {
                                                 <Typography
                                                     variant="h5"
                                                     gutterBottom
+                                                    align="center"
                                                 >
                                                     A game made with vanilla
                                                     Javascript, HTML, and CSS

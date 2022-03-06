@@ -3,7 +3,6 @@ import { makeStyles } from "@material-ui/core";
 export default makeStyles((theme) => ({
     navGridContainer: {
         paddingTop: "10rem",
-        justifyContent: "center",
         position: "relative",
         flexWrap: "nowrap",
         [theme.breakpoints.up("md")]: {
@@ -26,6 +25,12 @@ export default makeStyles((theme) => ({
         width: "2.6rem",
         height: "2.6rem",
         cursor: "pointer",
+        "&:hover": {
+            color: "#a8aaff",
+        },
+        "&:focus": {
+            color: "#a8aaff",
+        },
     },
     title: {
         fontWeight: "700",
@@ -71,6 +76,12 @@ export default makeStyles((theme) => ({
         width: "2rem",
         height: "2rem",
         cursor: "pointer",
+        "&:hover": {
+            color: "#a8aaff",
+        },
+        "&:focus": {
+            color: "#a8aaff",
+        },
     },
     navMobileList: {
         display: "flex",
