@@ -35,6 +35,7 @@ export default makeStyles((theme) => ({
         justifyContent: "center",
     },
     list: {
+        textAlign: "center",
         justifyContent: "center",
         paddingTop: "0",
     },

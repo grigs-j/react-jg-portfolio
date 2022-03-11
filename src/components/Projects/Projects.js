@@ -6,6 +6,7 @@ import {
     Collapse,
     ListItemIcon,
     Card,
+    ListItemText,
 } from "@material-ui/core";
 import { ExpandLess, ExpandMore } from "@material-ui/icons";
 import React, { useState } from "react";
@@ -19,7 +20,6 @@ import reactMoviePreview from "../../assets/rmdb-mobile-preview.PNG";
 import MGPreview from "../../assets/mg-mobile-preview.PNG";
 import waresPreview from "../../assets/gatheredwares-mobile-preview.PNG";
 import JGPreview from "../../assets/jg-portfolio-mobile-preview.PNG";
-import jsGamePreview from "../../assets/2048-preview.PNG";
 
 const Projects = () => {
     const classes = useStyles();
@@ -61,9 +61,7 @@ const Projects = () => {
                     >
                         projects
                     </Typography>
-                    {/* NEW PROJECTT CARD@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/}
-                    {/* NEW PROJECTT CARD@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/}
-                    {/* NEW PROJECTT CARD@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/}
+                    {/* NEW PROJECT CARD@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/}
                     <ListItem className={classes.projectListContainer}>
                         <Typography
                             onClick={handleProjectOne}
@@ -194,9 +192,6 @@ const Projects = () => {
                                                 </Typography>
                                             </ListItem>
                                             <ListItem className={classes.list}>
-                                                <Typography>Styled</Typography>
-                                            </ListItem>
-                                            <ListItem className={classes.list}>
                                                 <Typography>
                                                     CSS/SCSS
                                                 </Typography>
@@ -225,9 +220,7 @@ const Projects = () => {
                             </Collapse>
                         </Card>
                     </ListItem>
-                    {/* NEW PROJECTT CARD@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/}
-                    {/* NEW PROJECTT CARD@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/}
-                    {/* NEW PROJECTT CARD@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/}
+                    {/* NEW PROJECT CARD@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/}
                     <ListItem className={classes.projectListContainer}>
                         <Typography
                             onClick={handleProjectTwo}
@@ -376,9 +369,7 @@ const Projects = () => {
                             </Collapse>
                         </Card>
                     </ListItem>
-                    {/* NEW PROJECTT CARD@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/}
-                    {/* NEW PROJECTT CARD@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/}
-                    {/* NEW PROJECTT CARD@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/}
+                    {/* NEW PROJECT CARD@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/}
                     <ListItem className={classes.projectListContainer}>
                         <Typography
                             onClick={handleProjectThree}
@@ -513,9 +504,7 @@ const Projects = () => {
                             </Collapse>
                         </Card>
                     </ListItem>
-                    {/* NEW PROJECTT CARD@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/}
-                    {/* NEW PROJECTT CARD@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/}
-                    {/* NEW PROJECTT CARD@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/}
+                    {/* NEW PROJECT CARD@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/}
                     <ListItem className={classes.projectListContainer}>
                         <Typography
                             onClick={handleProjectFour}
@@ -634,9 +623,7 @@ const Projects = () => {
                             </Collapse>
                         </Card>
                     </ListItem>
-                    {/* NEW PROJECTT CARD@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/}
-                    {/* NEW PROJECTT CARD@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/}
-                    {/* NEW PROJECTT CARD@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/}
+                    {/* NEW PROJECT CARD@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/}
                     <ListItem className={classes.projectListContainer}>
                         <Typography
                             onClick={handleProjectFive}
@@ -757,11 +744,6 @@ const Projects = () => {
                                             </ListItem>
                                             <ListItem className={classes.list}>
                                                 <Typography>
-                                                    Styled Components
-                                                </Typography>
-                                            </ListItem>
-                                            <ListItem className={classes.list}>
-                                                <Typography>
                                                     CSS/SCSS
                                                 </Typography>
                                             </ListItem>
@@ -772,146 +754,20 @@ const Projects = () => {
                                             </ListItem>
                                             <ListItem className={classes.list}>
                                                 <Typography>
-                                                    Adobe Illustrator
+                                                    Email.js
                                                 </Typography>
                                             </ListItem>
+                                            <ListItemText
+                                                className={classes.list}
+                                            >
+                                                Adobe Illustrator
+                                            </ListItemText>
                                         </List>
                                     </Grid>
                                 </Grid>
                                 <Typography
                                     className={classes.topLink}
                                     onClick={handleProjectFive}
-                                    gutterBottom
-                                    align="center"
-                                >
-                                    BACK UP <FaArrowUp />
-                                </Typography>
-                            </Collapse>
-                        </Card>
-                    </ListItem>
-                    {/* NEW PROJECTT CARD@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/}
-                    {/* NEW PROJECTT CARD@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/}
-                    {/* NEW PROJECTT CARD@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/}
-                    <ListItem className={classes.projectListContainer}>
-                        <Typography
-                            onClick={handleProjectSix}
-                            className={classes.link}
-                        >
-                            2048 game{" "}
-                            <ListItemIcon>
-                                {openProjectSix ? (
-                                    <ExpandLess />
-                                ) : (
-                                    <ExpandMore />
-                                )}
-                            </ListItemIcon>
-                        </Typography>
-                        <Card>
-                            <Collapse
-                                in={openProjectSix}
-                                timeout={{ enter: 900, exit: 600 }}
-                                unmountOnExit
-                                className={classes.card}
-                            >
-                                <Grid container>
-                                    <Grid item xs={12} md={6}>
-                                        <List>
-                                            <ListItem
-                                                className={classes.subtitle}
-                                            >
-                                                <Typography
-                                                    variant="h5"
-                                                    gutterBottom
-                                                    align="center"
-                                                >
-                                                    A game made with vanilla
-                                                    Javascript, HTML, and CSS
-                                                </Typography>
-                                            </ListItem>
-                                            <ListItem>
-                                                <img
-                                                    src={jsGamePreview}
-                                                    alt="2048, JavaScript game preview"
-                                                    className={classes.previews}
-                                                />
-                                            </ListItem>
-                                            <Grid item className={classes.list}>
-                                                <List>
-                                                    <ListItem
-                                                        className={
-                                                            classes.btnLinkContainer
-                                                        }
-                                                    >
-                                                        <Link
-                                                            className={
-                                                                classes.btnLink
-                                                            }
-                                                            to="/2048"
-                                                            target="_blank"
-                                                            rel="noreferrer"
-                                                        >
-                                                            LIVE
-                                                        </Link>
-                                                        <Link
-                                                            className={
-                                                                classes.btnLink
-                                                            }
-                                                            to="//https://github.com/grigs-j/js-2048-game"
-                                                            target="_blank"
-                                                            rel="noreferrer"
-                                                        >
-                                                            REPO
-                                                        </Link>
-                                                    </ListItem>
-                                                </List>
-                                            </Grid>
-                                        </List>
-                                    </Grid>
-                                    <Grid item xs={12} md={6}>
-                                        <List>
-                                            <ListItem
-                                                className={classes.projText}
-                                            >
-                                                <Typography
-                                                    variant="body1"
-                                                    align="center"
-                                                    gutterBottom
-                                                >
-                                                    A fun game based off the
-                                                    original 2048. Focused on
-                                                    building an app without
-                                                    libraries, that was heavily
-                                                    reliant on JavaScript
-                                                    methods.
-                                                </Typography>
-                                            </ListItem>
-                                            <ListItem className={classes.list}>
-                                                <Typography
-                                                    variant="h5"
-                                                    className={
-                                                        classes.projTitle
-                                                    }
-                                                >
-                                                    Tools Used:
-                                                </Typography>
-                                            </ListItem>
-                                            <ListItem className={classes.list}>
-                                                <Typography>
-                                                    JavaScript
-                                                </Typography>
-                                            </ListItem>
-                                            <ListItem className={classes.list}>
-                                                <Typography>CSS3</Typography>
-                                            </ListItem>
-                                            <ListItem className={classes.list}>
-                                                <Typography>HTML5</Typography>
-                                            </ListItem>
-                                        </List>
-                                    </Grid>
-                                </Grid>
-                                <Typography
-                                    className={classes.topLink}
-                                    onClick={handleProjectSix}
                                     gutterBottom
                                     align="center"
                                 >

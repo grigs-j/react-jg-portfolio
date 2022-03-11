@@ -1,7 +1,7 @@
 import { Grid, Typography } from "@material-ui/core";
 import React from "react";
 import useStyles from "./styles";
-import { Link } from "react-router-dom";
+import EmailForm from "../EmailForm/EmailForm";
 
 const Contact = () => {
     const classes = useStyles();
@@ -13,13 +13,7 @@ const Contact = () => {
                     <Typography variant="h1" className={classes.title}>
                         interested in working together?
                     </Typography>
-                    <Link
-                        to="//mailto:grigsbyjonathan@gmail.com"
-                        target="_blank"
-                        className={classes.link}
-                    >
-                        email me
-                    </Link>
+                    <EmailForm />
                 </Grid>
             </Grid>
         </>

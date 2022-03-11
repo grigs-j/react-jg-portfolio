@@ -6,7 +6,14 @@ import {
     responsiveFontSizes,
     ThemeProvider,
 } from "@material-ui/core";
-import { Nav, About, Projects, Contact, Footer } from "./components/index";
+import {
+    Nav,
+    About,
+    Projects,
+    Contact,
+    Footer,
+    ThanksPage,
+} from "./components/index";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 let theme = createTheme({
@@ -37,6 +44,14 @@ function App() {
                                     <Contact />
                                     <Footer />
                                 </Container>
+                            </>
+                        }
+                    />
+                    <Route
+                        path="/thanks"
+                        element={
+                            <>
+                                <ThanksPage />
                             </>
                         }
                     />
