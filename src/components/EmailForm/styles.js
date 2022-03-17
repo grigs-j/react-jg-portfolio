@@ -1,17 +1,37 @@
 import { makeStyles } from "@material-ui/core";
 
 export default makeStyles((theme) => ({
-    name: {
-        marginRight: "1rem",
+    form: {
+        width: "100%",
+        [theme.breakpoints.up("sm")]: {
+            width: "45%",
+        },
     },
-    email: {
-        marginRight: "1rem",
+    emailLink: {
+        [theme.breakpoints.up("sm")]: {
+            width: "80%",
+        },
     },
-    btn: {
-        color: "#a8aaff",
-        fontWeight: "700",
-        fontSize: "1.25rem",
-        marginTop: ".70rem",
+    nameLink: {
+        marginBottom: ".75rem",
+        [theme.breakpoints.up("sm")]: {
+            width: "80%",
+        },
+    },
+    message: {
+        margin: "2rem 0",
+        width: "100%",
+    },
+    topLink: {
+        display: "block",
+        width: "100px",
+        background: "none",
+        border: "none",
+        fontSize: "1.75rem",
+        color: "#0c1027",
         cursor: "pointer",
+        "&:hover": {
+            color: "#a8aaff",
+        },
     },
 }));

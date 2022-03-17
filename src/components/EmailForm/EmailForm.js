@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
 import useStyles from "./styles";
-import { Button, Grid, TextField } from "@material-ui/core";
+import emailjs from "@emailjs/browser";
+import { Grid, TextareaAutosize, TextField } from "@material-ui/core";
 
 const EmailForm = () => {
     const classes = useStyles();
@@ -10,6 +10,7 @@ const EmailForm = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
+        emailjs.init("IIKF4brUmkO0ILqZx");
         emailjs
             .sendForm(
                 "service_6t7xuse",
@@ -22,41 +23,39 @@ const EmailForm = () => {
                     window.open("https://jongrigsby.com/thanks");
                 },
                 (error) => {
-                    alert("FAILED", error.text);
+                    alert(
+                        "We've had an error. Please email grigsbyjonathan@gmail.com"
+                    );
                 }
             );
     };
+
     return (
-        <form ref={form} onSubmit={sendEmail}>
-            <Grid container>
+        <Grid container>
+            <form ref={form} onSubmit={sendEmail} className={classes.form}>
                 <TextField
-                    className={classes.name}
                     label="Name"
-                    type="text"
                     name="name"
                     variant="standard"
-                    required
+                    fullWidth
+                    className={classes.nameLink}
                 />
                 <TextField
-                    className={classes.email}
                     label="Email"
-                    type="text"
                     name="email"
                     variant="standard"
-                    required
+                    fullWidth
+                    className={classes.emailLink}
                 />
-                <Button
-                    className={classes.btn}
-                    variant="text"
-                    size="medium"
-                    type="submit"
-                    name="Send"
-                    disableRipple
-                >
-                    Send
-                </Button>
-            </Grid>
-        </form>
+                <TextareaAutosize
+                    name="message"
+                    placeholder="Your Message"
+                    className={classes.message}
+                    minRows={3}
+                />
+                <input type="submit" value="SEND" className={classes.topLink} />
+            </form>
+        </Grid>
     );
 };
 

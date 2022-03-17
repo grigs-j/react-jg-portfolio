@@ -9,10 +9,10 @@ html {
     box-sizing: inherit;
 }
 body {
-    background-image: url("./assets/codedog-pink.svg");
+    /* background-image: url("./assets/codedog-pink.svg");
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     font-size: 1rem;
     line-height: 1.4;
     margin: 0;

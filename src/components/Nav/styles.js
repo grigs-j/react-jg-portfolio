@@ -65,10 +65,6 @@ export default makeStyles((theme) => ({
     skill: {
         marginRight: "1rem",
     },
-    drawer: {
-        width: "100%",
-        height: "100vh",
-    },
     navCloseButton: {
         position: "absolute",
         top: "1.75rem",

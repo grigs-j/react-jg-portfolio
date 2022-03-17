@@ -6,7 +6,6 @@ import {
     Collapse,
     ListItemIcon,
     Card,
-    ListItemText,
 } from "@material-ui/core";
 import { ExpandLess, ExpandMore } from "@material-ui/icons";
 import React, { useState } from "react";
@@ -757,11 +756,11 @@ const Projects = () => {
                                                     Email.js
                                                 </Typography>
                                             </ListItem>
-                                            <ListItemText
-                                                className={classes.list}
-                                            >
-                                                Adobe Illustrator
-                                            </ListItemText>
+                                            <ListItem className={classes.list}>
+                                                <Typography>
+                                                    Adobe Illustrator
+                                                </Typography>
+                                            </ListItem>
                                         </List>
                                     </Grid>
                                 </Grid>

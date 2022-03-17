@@ -25,7 +25,7 @@ theme = responsiveFontSizes(theme);
 
 function App() {
     return (
-        <Router>
+        <Router basename="/">
             <ThemeProvider theme={theme}>
                 <CssBaseline />
                 <Routes>
@@ -47,14 +47,7 @@ function App() {
                             </>
                         }
                     />
-                    <Route
-                        path="/thanks"
-                        element={
-                            <>
-                                <ThanksPage />
-                            </>
-                        }
-                    />
+                    <Route path="/thanks" element={<ThanksPage />} />
                 </Routes>
             </ThemeProvider>
         </Router>
