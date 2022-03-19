@@ -25,6 +25,9 @@ export default makeStyles((theme) => ({
         width: "2.6rem",
         height: "2.6rem",
         cursor: "pointer",
+        transition: theme.transitions.create(["color"], {
+            duration: theme.transitions.duration.complex,
+        }),
         "&:hover": {
             color: "#a8aaff",
         },
@@ -42,6 +45,9 @@ export default makeStyles((theme) => ({
         fontSize: "2.5rem",
         color: "#0c1027",
         cursor: "pointer",
+        transition: theme.transitions.create(["color"], {
+            duration: theme.transitions.duration.complex,
+        }),
         "&:hover": {
             color: "#a8aaff",
         },
@@ -50,6 +56,9 @@ export default makeStyles((theme) => ({
         marginRight: "1rem",
         color: "#0c1027",
         cursor: "pointer",
+        transition: theme.transitions.create(["color"], {
+            duration: theme.transitions.duration.complex,
+        }),
         "&:hover": {
             color: "#a8aaff",
         },
@@ -72,6 +81,9 @@ export default makeStyles((theme) => ({
         width: "2rem",
         height: "2rem",
         cursor: "pointer",
+        transition: theme.transitions.create(["color"], {
+            duration: theme.transitions.duration.complex,
+        }),
         "&:hover": {
             color: "#a8aaff",
         },

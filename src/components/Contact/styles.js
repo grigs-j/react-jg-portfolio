@@ -5,6 +5,9 @@ export default makeStyles((theme) => ({
         color: "#0c1027",
         cursor: "pointer",
         fontSize: "2rem",
+        transition: theme.transitions.create(["color"], {
+            duration: theme.transitions.duration.complex,
+        }),
         "&:hover": {
             color: "#a8aaff",
         },

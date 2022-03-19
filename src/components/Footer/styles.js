@@ -10,6 +10,9 @@ export default makeStyles((theme) => ({
         fontSize: "1.75rem",
         color: "#0c1027",
         justifyContent: "flex-end",
+        transition: theme.transitions.create(["color"], {
+            duration: theme.transitions.duration.complex,
+        }),
         "&:hover": {
             color: "#a8aaff",
         },

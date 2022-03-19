@@ -19,6 +19,7 @@ import reactMoviePreview from "../../assets/rmdb-mobile-preview.PNG";
 import MGPreview from "../../assets/mg-mobile-preview.PNG";
 import waresPreview from "../../assets/gatheredwares-mobile-preview.PNG";
 import JGPreview from "../../assets/jg-portfolio-mobile-preview.PNG";
+import copypaxi from "../../assets/copypaxi-preview.PNG";
 
 const Projects = () => {
     const classes = useStyles();
@@ -60,6 +61,164 @@ const Projects = () => {
                     >
                         projects
                     </Typography>
+
+                    {/* NEW PROJECT CARD@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/}
+                    <ListItem className={classes.projectListContainer}>
+                        <Typography
+                            onClick={handleProjectSix}
+                            className={classes.link}
+                        >
+                            copypaxi app{" "}
+                            <ListItemIcon>
+                                {openProjectSix ? (
+                                    <ExpandLess />
+                                ) : (
+                                    <ExpandMore />
+                                )}
+                            </ListItemIcon>
+                        </Typography>
+                        <Card>
+                            <Collapse
+                                in={openProjectSix}
+                                timeout={{ enter: 900, exit: 600 }}
+                                unmountOnExit
+                                className={classes.card}
+                            >
+                                <Grid container>
+                                    <Grid item xs={12} md={6}>
+                                        <List>
+                                            <ListItem
+                                                className={classes.subtitle}
+                                            >
+                                                <Typography
+                                                    variant="h5"
+                                                    gutterBottom
+                                                    align="center"
+                                                >
+                                                    Cotopaxi clone e-commerce
+                                                    website
+                                                </Typography>
+                                            </ListItem>
+                                            <ListItem>
+                                                <img
+                                                    src={copypaxi}
+                                                    alt="copypaxi preview"
+                                                    className={classes.previews}
+                                                />
+                                            </ListItem>
+                                            <Grid item className={classes.list}>
+                                                <List>
+                                                    <ListItem
+                                                        className={
+                                                            classes.btnLinkContainer
+                                                        }
+                                                    >
+                                                        <Link
+                                                            className={
+                                                                classes.btnLink
+                                                            }
+                                                            to="//react-copypaxi.netlify.app/"
+                                                            target="_blank"
+                                                            rel="noreferrer"
+                                                        >
+                                                            LIVE
+                                                        </Link>
+                                                        <Link
+                                                            className={
+                                                                classes.btnLink
+                                                            }
+                                                            to="//github.com/grigs-j/React-E-commerce-Clothing-Site"
+                                                            target="_blank"
+                                                            rel="noreferrer"
+                                                        >
+                                                            REPO
+                                                        </Link>
+                                                    </ListItem>
+                                                </List>
+                                            </Grid>
+                                        </List>
+                                    </Grid>
+                                    <Grid item xs={12} md={6}>
+                                        <List>
+                                            <ListItem
+                                                className={classes.projText}
+                                            >
+                                                <Typography
+                                                    variant="body1"
+                                                    align="center"
+                                                    gutterBottom
+                                                >
+                                                    A semi-clone of the Cotopaxi
+                                                    e-commerce website. For me
+                                                    this was a chance to get
+                                                    very familar with materialUI
+                                                    styling, including custom
+                                                    themes, animation, and
+                                                    resposiveness. This is a
+                                                    complete e-commerce store
+                                                    with filtering by category,
+                                                    cart updates, pagination,
+                                                    and checkout. I was able to
+                                                    explore many javascript
+                                                    methods, as well as the
+                                                    useContext api with this
+                                                    project.
+                                                </Typography>
+                                            </ListItem>
+                                            <ListItem className={classes.list}>
+                                                <Typography
+                                                    variant="h5"
+                                                    className={
+                                                        classes.projTitle
+                                                    }
+                                                >
+                                                    Tools Used:
+                                                </Typography>
+                                            </ListItem>
+                                            <ListItem className={classes.list}>
+                                                <Typography>
+                                                    JavaScript
+                                                </Typography>
+                                            </ListItem>
+                                            <ListItem className={classes.list}>
+                                                <Typography>
+                                                    React.js
+                                                </Typography>
+                                            </ListItem>
+                                            <ListItem className={classes.list}>
+                                                <Typography>
+                                                    MaterialUI
+                                                </Typography>
+                                            </ListItem>
+                                            <ListItem className={classes.list}>
+                                                <Typography>
+                                                    CSS/SCSS
+                                                </Typography>
+                                            </ListItem>
+                                            <ListItem className={classes.list}>
+                                                <Typography>
+                                                    React Router
+                                                </Typography>
+                                            </ListItem>
+                                            <ListItem className={classes.list}>
+                                                <Typography>
+                                                    Adobe Illustrator
+                                                </Typography>
+                                            </ListItem>
+                                        </List>
+                                    </Grid>
+                                </Grid>
+                                <Typography
+                                    className={classes.topLink}
+                                    onClick={handleProjectSix}
+                                    gutterBottom
+                                    align="center"
+                                >
+                                    BACK UP <FaArrowUp />
+                                </Typography>
+                            </Collapse>
+                        </Card>
+                    </ListItem>
                     {/* NEW PROJECT CARD@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/}
                     <ListItem className={classes.projectListContainer}>
                         <Typography
@@ -125,7 +284,7 @@ const Projects = () => {
                                                             className={
                                                                 classes.btnLink
                                                             }
-                                                            to="//https://github.com/grigs-j/react-stripe-e-commerce-store"
+                                                            to="//github.com/grigs-j/react-stripe-e-commerce-store"
                                                             target="_blank"
                                                             rel="noreferrer"
                                                         >
@@ -273,7 +432,7 @@ const Projects = () => {
                                                             className={
                                                                 classes.btnLink
                                                             }
-                                                            to="//https://reactmoviedbapp2021.netlify.app/"
+                                                            to="//reactmoviedbapp2021.netlify.app/"
                                                             target="_blank"
                                                             rel="noreferrer"
                                                         >
@@ -283,7 +442,7 @@ const Projects = () => {
                                                             className={
                                                                 classes.btnLink
                                                             }
-                                                            to="//https://github.com/grigs-j/React-movie-search-database"
+                                                            to="//github.com/grigs-j/React-movie-search-database"
                                                             target="_blank"
                                                             rel="noreferrer"
                                                         >
@@ -686,7 +845,7 @@ const Projects = () => {
                                                             className={
                                                                 classes.btnLink
                                                             }
-                                                            to="//https://github.com/grigs-j/react-jg-portfolio"
+                                                            to="//github.com/grigs-j/react-jg-portfolio"
                                                             target="_blank"
                                                             rel="noreferrer"
                                                         >

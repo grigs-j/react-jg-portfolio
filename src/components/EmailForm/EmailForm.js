@@ -38,6 +38,7 @@ const EmailForm = () => {
                     name="name"
                     variant="standard"
                     fullWidth
+                    required
                     className={classes.nameLink}
                 />
                 <TextField
@@ -45,6 +46,7 @@ const EmailForm = () => {
                     name="email"
                     variant="standard"
                     fullWidth
+                    required
                     className={classes.emailLink}
                 />
                 <TextareaAutosize

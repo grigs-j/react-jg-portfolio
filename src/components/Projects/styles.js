@@ -10,6 +10,9 @@ export default makeStyles((theme) => ({
         marginBottom: ".5rem",
         color: "#0c1027",
         cursor: "pointer",
+        transition: theme.transitions.create(["color"], {
+            duration: theme.transitions.duration.complex,
+        }),
         "&:hover": {
             color: "#a8aaff",
         },
@@ -56,6 +59,9 @@ export default makeStyles((theme) => ({
         fontSize: "1.75rem",
         color: "#0c1027",
         margin: "0rem 1rem",
+        transition: theme.transitions.create(["color"], {
+            duration: theme.transitions.duration.complex,
+        }),
         "&:hover": {
             color: "#a8aaff",
         },

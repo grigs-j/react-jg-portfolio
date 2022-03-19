@@ -30,6 +30,9 @@ export default makeStyles((theme) => ({
         fontSize: "1.75rem",
         color: "#0c1027",
         cursor: "pointer",
+        transition: theme.transitions.create(["color"], {
+            duration: theme.transitions.duration.complex,
+        }),
         "&:hover": {
             color: "#a8aaff",
         },
