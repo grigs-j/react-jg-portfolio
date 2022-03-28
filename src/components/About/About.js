@@ -13,8 +13,8 @@ const About = () => {
                 <Typography className={classes.text}>
                     using over a decade of fine-dining culinary experience, i am
                     enthusiastically diving into the digital world to create
-                    visually pleasing experiences. i am passionate about
-                    javascript logic and creativity coming together.
+                    visually pleasing experiences. i am passionate about web
+                    design and creativity coming together.
                 </Typography>
                 <Typography variant="h6" className={classes.subtext}>
                     i'm currently looking for hiring opportunities!

@@ -69,15 +69,15 @@ const Nav = () => {
                 <Typography className={classes.title} variant="h1">
                     jonathan grigsby
                 </Typography>
-                <Grid item className={classes.navSkills}>
+                {/* <Grid item className={classes.navSkills}>
                     <FaHtml5 className={classes.skill} />
                     <FaCss3Alt className={classes.skill} />
                     <FaJsSquare className={classes.skill} />
                     <FaReact className={classes.skill} />
                     <FaNodeJs className={classes.skill} />
-                </Grid>
+                </Grid> */}
                 <Typography variant="h5" gutterBottom>
-                    front end react js web developer
+                    web developer & designer
                 </Typography>
                 <Typography variant="h6">
                     creative design with a caffeinated heart
